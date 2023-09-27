@@ -19,7 +19,7 @@ import picaaashish from "../../public/Screenshot (811).png"
 import amandeep from "../../public/Screenshot (812).png"
 
 
-const MiniProjects = ({ type, title, github, img, link }) => {
+const MiniProjects = ({ type, title, github, img, link ,texttoview}) => {
     return (
         <>
             <article
@@ -40,7 +40,7 @@ const MiniProjects = ({ type, title, github, img, link }) => {
                     <div className='mt-5 flex items-center w-full justify-between '>
                         <Link href={link}
                             className='ml-0 rounded-lg  text-dark hover:underline underline-offset-2 p-2 px-0   text-lg font-medium'
-                            target="_blank">Visit Him</Link>
+                            target="_blank">{texttoview}</Link>
                         {/* <Link href={github} target="_blank" className='w-8'><GithubIcon /></Link> */}
                     </div>
                 </div>
@@ -80,6 +80,9 @@ const Articles = () => {
                                 type={""}
                                 summary="ddddddddddddkkkkdfjd adfdj adfdfj aman deep sharm is a bad boy and now he is required to do so much of the work in the society and now he is required to do much of the work alone in the night "
                                 link={"https://www.linkedin.com/in/aashiskumar/"}
+                            
+                                texttoview="visit him"
+                            
                             />
                         </div>
                         <div className='col-span-6'>
@@ -91,6 +94,7 @@ const Articles = () => {
                                 type={""}
                                 summary="ddddddddddddkkkkdfjd adfdj adfdfj aman deep sharm is a bad boy and now he is required to do so much of the work in the society and now he is required to do much of the work alone in the night "
                                 link={"https://www.linkedin.com/in/aman-deep-sharma-136689223/"}
+                                texttoview="visit me"
                             />
                         </div>
                       
